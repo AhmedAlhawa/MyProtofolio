@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage":"https://Ahmadabohawa.github.io/Ahmadabohawa",
+  "homepage":"https://Ahmadabohawa.github.io/protofolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

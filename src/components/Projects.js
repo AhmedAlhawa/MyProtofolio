@@ -10,8 +10,7 @@ import ecommerce from "../assets/img/ecommerce.png"
 import cruddapp from "../assets/img/cruddapp.png"
 import countries from "../assets/img/countries.png"
 import imgshrp2 from "../assets/img/color-sharp2.png"
-
-
+import food from "../assets/img/ff.png"
 
 
 // import imgshrp2 from "../assets/img/color-sharp2.png";
@@ -43,11 +42,11 @@ export const Projects = () => {
             description: "countries_app",
             imgUrl: countries
         },
-        // {
-        //     title: "Business Startup",
-        //     description: "Design && Development",
-        //     imgUrl: projim3
-        // },
+        {
+            title: "Food Delivery App",
+            description: "food-delivery-app",
+            imgUrl: food
+        }
     ]
     return (
 
@@ -78,7 +77,12 @@ export const Projects = () => {
                                                 <Col key={index} sm={6} md={4}>
                                                     <div style={{ cursor: 'pointer' }} className="proj-imgbx">
                                                         <a href={`https://ahmadabohawa.github.io/${project.description}/`} target="_blank">
-                                                            <img src={project.imgUrl} />
+                                                            {
+                                                                project.description=="food-delivery-app"?
+                                                                <img src={project.imgUrl} style={{height:"225px"}}/>:
+                                                                <img src={project.imgUrl}/>
+                                                            }
+                                                            
                                                         </a>
                                                         <div className="proj-txtx">
                                                             <h4>{project.title}</h4>

@@ -7,6 +7,8 @@ import css from "../assets/img/CSS.jpg";
 import html1 from "../assets/img/html1.jpg"
 import js3  from "../assets/img/js3.jpg";
 import react2 from "../assets/img/react2.jpg"
+import MateriaUi from "../assets/img/MateriaUi.jpg"
+import Next from "../assets/img/Next.jpg"
 import state1 from "../assets/img/state1.jpg"
 import redux from "../assets/img/redux.jpg"
 import agile from "../assets/img/Agile.jpg"
@@ -49,7 +51,7 @@ import uml3 from "../assets/img/uml3.jpg"
 
                             <p>
                                 Further More those skills i will be able to learn any new skill to convert business needs
-                                into high-value products , i'm also working on <h2 style={{marginTop:'15px'}}> Material UI and NextJs</h2>
+                                into high-value products 
                             </p>
 
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
@@ -70,6 +72,10 @@ import uml3 from "../assets/img/uml3.jpg"
                                     <h5>Tailwind CSS</h5>
                                 </div>
                                 <div className="item">
+                                    <img src={MateriaUi} style={{height:'200px',borderRadius:'50%'}} alt="img1"/>
+                                    <h5>Material-Ui</h5>
+                                </div>
+                                <div className="item">
                                     <img src={react2} style={{height:'200px',borderRadius:'50%'}} alt="img1"/>
                                     <h5>ReactJs</h5>
                                 </div>
@@ -80,6 +86,10 @@ import uml3 from "../assets/img/uml3.jpg"
                                 <div className="item">
                                     <img src={redux} style={{height:'200px',borderRadius:'50%'}} alt="img1"/>
                                     <h5>ReduxToolkit</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={Next} style={{height:'200px',borderRadius:'50%'}} alt="img1"/>
+                                    <h5>NextJs</h5>
                                 </div>
                                 <div className="item">
                                     <img src={agile} style={{height:'200px',borderRadius:'50%'}} alt="img1"/>

@@ -1,9 +1,11 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import github from '../assets/img/github.svg';
 import { hover } from '@testing-library/user-event/dist/hover';
 const NavBar = () => {
 
@@ -28,7 +30,6 @@ const NavBar = () => {
   }
   return (
     <>        
-    
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -50,8 +51,8 @@ const NavBar = () => {
               </a>
               <a href="https://www.facebook.com/profile.php?id=100011342491635" target="_blank">
                 <img src={navIcon2}  alt="FB" /></a>
-              <a href="https://www.instagram.com/ahmad_abu_alhawa22/?hl=en" target="_blank">
-                <img src={navIcon3}  alt="Instagram" /></a>
+              <a href="https://github.com/Ahmadabohawa" target="_blank">
+                <img src={github}  alt="Github" style={{fontSize:'30px',fontWeight:'bold'}} /></a>
             </div>
             <button 
              onClick={() => console.log('connect')} className='vvd' >

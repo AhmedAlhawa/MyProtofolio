@@ -11,7 +11,7 @@ import cruddapp from "../assets/img/cruddapp.png"
 import countries from "../assets/img/countries.png"
 import imgshrp2 from "../assets/img/color-sharp2.png"
 import food from "../assets/img/ff.png"
-
+import prayerTimings from "../assets/img/prayerTimings.png"
 
 // import imgshrp2 from "../assets/img/color-sharp2.png";
 export const Projects = () => {
@@ -46,6 +46,11 @@ export const Projects = () => {
             title: "Food Delivery App",
             description: "food-delivery-app",
             imgUrl: food
+        },
+        {
+            title: "Prayer Timings",
+            description: "prayer-Timings",
+            imgUrl: prayerTimings
         }
     ]
     return (
@@ -78,11 +83,8 @@ export const Projects = () => {
                                                     <div style={{ cursor: 'pointer' }} className="proj-imgbx">
                                                         <a href={`https://ahmadabohawa.github.io/${project.description}/`} target="_blank">
                                                             {
-                                                                project.description=="food-delivery-app"?
-                                                                <img src={project.imgUrl} style={{height:"225px"}}/>:
-                                                                <img src={project.imgUrl}/>
+                                                                <img src={project.imgUrl} style={{height:"225px"}}/>
                                                             }
-                                                            
                                                         </a>
                                                         <div className="proj-txtx">
                                                             <h4>{project.title}</h4>

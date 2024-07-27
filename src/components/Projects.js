@@ -106,7 +106,7 @@ export const Projects = () => {
                                     <Nav.Link eventKey="first">React Projects</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second" >Html&Css&js</Nav.Link>
+                                    <Nav.Link eventKey="second">Html&Css&js</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Tab three</Nav.Link>
@@ -136,6 +136,7 @@ export const Projects = () => {
                                 </Row>
                             </Tab.Pane> 
                             <Tab.Pane eventKey="second">
+                                  <div className="projects-section-second">
                                 <Row>
                                     {HtmlProjects.map((project,index)=>{
                                         return(
@@ -153,7 +154,8 @@ export const Projects = () => {
                                         </Col>
                                         )
                                         })}
-                                </Row>
+                                </Row></div>
+                                        
                             </Tab.Pane>
                             <Tab.Pane eventKey="third"></Tab.Pane>
                         </Tab.Container>

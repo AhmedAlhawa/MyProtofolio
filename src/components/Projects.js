@@ -130,7 +130,8 @@ export const Projects = () => {
                                                     </div>
                                                 </Col>
                                             )
-                                        })   }
+                                        })  
+                                         }
                                 </Row>
                             </Tab.Pane> 
                             <Tab.Pane eventKey="second">

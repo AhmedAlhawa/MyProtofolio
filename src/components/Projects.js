@@ -12,8 +12,12 @@ import countries from "../assets/img/countries.png"
 import imgshrp2 from "../assets/img/color-sharp2.png"
 import food from "../assets/img/ff.png"
 import prayerTimings from "../assets/img/prayerTimings.png"
-
-// import imgshrp2 from "../assets/img/color-sharp2.png";
+import dadJokes from "../assets/img/Dad-Jokes.png"
+import rotatingNavigation from "../assets/img/RotatingNavigation.png"
+import landingPage from "../assets/img/Landing-Page.png"
+import expandingCard from "../assets/img/ExpandingCard.png"
+import TicTacToe from "../assets/img/Tic-Tac-Toe.png"
+import verticalSlider from "../assets/img/VerticalSlider.png"
 export const Projects = () => {
 
     const projects = [
@@ -51,6 +55,40 @@ export const Projects = () => {
             title: "Prayer Timings",
             description: "prayer-Timings",
             imgUrl: prayerTimings
+        },
+        {
+            title: "Tic-Tac-Toe",
+            description: "Tic-Tac-Toe",
+            imgUrl: TicTacToe
+        }
+    ]
+
+    
+    const HtmlProjects = [
+        {
+            title: "Landing Page",
+            description: "LandingPage",
+            imgUrl: landingPage
+        },
+        {
+            title: "Dad Jokes",
+            description: "Dad-Jokes",
+            imgUrl: dadJokes
+        },
+        {
+            title: "Expanding Card",
+            description: "ExpandingCard",
+            imgUrl: expandingCard
+        },
+        {
+            title: "RotatingNavigation",
+            description: "RotatingNavigation",
+            imgUrl: rotatingNavigation
+        },
+        {
+            title: "VerticalSlider",
+            description: "VerticalSlider",
+            imgUrl: verticalSlider
         }
     ]
     return (
@@ -65,23 +103,23 @@ export const Projects = () => {
 
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab one</Nav.Link>
+                                    <Nav.Link eventKey="first">React Projects</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second" >Tab tow</Nav.Link>
+                                    <Nav.Link eventKey="second" >Html&Css&js</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Tab three</Nav.Link>
                                 </Nav.Item>
                             </Nav>
-                            <Tab.Pane eventKey="first">
+                             <Tab.Pane eventKey="first">
                                 <Row>
                                     {
                                         projects.map((project, index) => {
                                             return (
                                                 <Col key={index} sm={6} md={4}>
                                                     <div style={{ cursor: 'pointer' }} className="proj-imgbx">
-                                                        <a href={`https://ahmadabohawa.github.io/${project.description}/`} target="_blank">
+                                                        <a href={`https://ahmedalhawa.github.io/${project.description}/`} target="_blank">
                                                             {
                                                                 <img src={project.imgUrl} style={{height:"225px"}}/>
                                                             }
@@ -95,8 +133,27 @@ export const Projects = () => {
                                         })
                                     }
                                 </Row>
+                            </Tab.Pane> 
+                            <Tab.Pane eventKey="second">
+                                <Row>
+                                    {HtmlProjects.map((project,index)=>{
+                                        return(
+                                            <Col key={index} sm={6} md={4}>
+                                            <div style={{ cursor: 'pointer' }} className="proj-imgbx">
+                                                <a href={`https://AhmedAlhawa.github.io/${project.description}/`} target="_blank">
+                                                    {
+                                                        <img src={project.imgUrl} style={{height:"225px"}}/>
+                                                    }
+                                                </a>
+                                                <div className="proj-txtx">
+                                                    <h4>{project.title}</h4>
+                                                </div>
+                                            </div>
+                                        </Col>
+                                        )
+                                        })}
+                                </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second"></Tab.Pane>
                             <Tab.Pane eventKey="third"></Tab.Pane>
                         </Tab.Container>
                     </Col>

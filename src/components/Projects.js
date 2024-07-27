@@ -131,6 +131,7 @@ export const Projects = () => {
                                                 </Col>
                                             )
                                         })  
+                                        
                                          }
                                 </Row>
                             </Tab.Pane> 

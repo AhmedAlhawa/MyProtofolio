@@ -51,7 +51,7 @@ const NavBar = () => {
               </a>
               <a href="https://www.facebook.com/profile.php?id=100011342491635" target="_blank">
                 <img src={navIcon2}  alt="FB" /></a>
-              <a href="https://github.com/Ahmadabohawa" target="_blank">
+              <a href="https://github.com/AhmedAlhawa" target="_blank">
                 <img src={github}  alt="Github" style={{fontSize:'30px',fontWeight:'bold'}} /></a>
             </div>
             <button 

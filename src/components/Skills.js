@@ -14,12 +14,11 @@ import redux from "../assets/img/redux.jpg"
 import agile from "../assets/img/Agile.jpg"
 import problems_solving from "../assets/img/problems solving.jpg"
 import uml3 from "../assets/img/uml3.jpg"
-
+import shadcn from "../assets/img/shadcn.png"
     export const Skills =()=>{
 
         const responsive ={
             superLargerDesktop:{
-                
                 breakpoint:{max:4000,min:3000},
                 items:5
             },
@@ -70,6 +69,10 @@ import uml3 from "../assets/img/uml3.jpg"
                                 <div className="item">
                                     <img src={html1} style={{height:'200px',borderRadius:'50%'}} alt="img1"/>
                                     <h5>Tailwind CSS</h5>
+                                </div>
+                                 <div className="item">
+                                    <img src={shadcn} style={{height:'200px',borderRadius:'50%',background:'white'}} alt="img1"/>
+                                    <h5>Shadn</h5>
                                 </div>
                                 <div className="item">
                                     <img src={MateriaUi} style={{height:'200px',borderRadius:'50%'}} alt="img1"/>
